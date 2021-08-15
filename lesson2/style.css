@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: -3px;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: whitesmoke;
+    width: 70%;
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+    padding: 25px;
+}
+
+
+.container .title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.container .title span:nth-child(1){
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .title span:nth-child(2){
+    width: 200px;
+    background-color: rgba(228, 228, 228, 0.5);
+    color: #808191;
+    padding: 17px;
+    border-radius: 25px; 
+}
+
+.container .body{
+    display: flex;
+    height: 650px;
+    justify-content: space-between;
+
+}
+
+
+.container .body .left{
+   width: 50%;
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url('https://ui8-unity-gaming.herokuapp.com/img/categories-pic-1.png');
+   border-radius: 30px;
+   padding: 35px;
+   position: relative;
+
+} 
+
+.container .body .right{
+    width: 47%;
+    background: white;
+    border-radius: 31px;
+    margin: 0px 14px ;
+    position: relative;
+}
+
+.container .body .right .item{
+    width: 48%;
+    height: 34%;
+    border-radius: 50px;
+}
+
+
+.container .body .left .arrow{
+   display: flex;
+}
+
+.container .body .left .arrow>*{
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;    
+}
+
+.container .body .left .arrow>*:hover{
+    background-color: #6c5dd3;
+    color: #fff;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+.container .body .left .name{
+  position: absolute;
+  bottom: 6%;
+}
+
+
+.container .body .left .name span{
+    font-size: 13px;
+    font-weight: 700;
+    background: rgba(108, 93, 211, 0.5);
+    padding: 3px 15px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+#title_name_game{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container .body .view{
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+}
+
+.category{
+    min-width: 120px;
+    height: 48px;
+    background: #5a49ce;
+    color: #fff;
+    transition: 0.25s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.item-left{
+  height: 188px;
+  margin-right: 12px;
+  border-radius: 24px;
+}
+
+
+
+.body .right .item img{
+   margin: 10px 12px 10px 13px;
+   height: 188px;
+   border-radius: 24px;
+}
+
+.item_right{
+   flex-direction: column;
+   align-items: center;
+   padding: 11px;
+}
+
+.item{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+}
+
+
+.categories_details{
+    background: rgba(108, 93, 211, 0.1);
+    color: #3F8CFF;
+    transition: 0.25s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 700;
+    border: none;
+    min-width: 95px;
+    height: 25px;
+}
+
+.categories_detail{
+    background: rgba(228, 228, 228, 0.5);
+    color: #11142D;
+    min-width: 120px;
+    height: 48px;
+    border: none;
+    border-radius: 13px;
+    font-weight: 700;
+    
+}
+
+.h1{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.h2{
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    color: #808191;
+}
+
+
