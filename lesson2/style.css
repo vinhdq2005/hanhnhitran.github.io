@@ -24,6 +24,17 @@
     border-radius: 30px;
 }
 
+
+.container .body .view::before{
+    content: " ";
+    width: 9px;
+    height: 9px;
+    background: #7FBA7A;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
 .container .title span:nth-child(1){
     font-size: 24px;
     font-weight: 500;
@@ -184,6 +195,7 @@
 .h1{
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 12px;
 }
 
 .h2{
