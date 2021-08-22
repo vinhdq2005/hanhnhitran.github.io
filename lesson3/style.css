@@ -1,0 +1,26 @@
+.container{
+    height: 500px;
+    display: flex;
+}
+
+.red-box{
+    background-color: red;
+    height: 200%;
+    width: 150%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.orange-box {
+    background-color: orange;
+    height: 100%;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.orange-box1 {
+    background-color: yellow;
+    display: flex;
+    flex-direction: colomn;
+    width: 100%;
+}
