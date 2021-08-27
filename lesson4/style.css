@@ -60,12 +60,17 @@ li{
     flex-direction: column;
 }
 
-
 .categories span{
     font-family: "Amatic SC",cursive;
     font-weight: 400;
     color: #fff;
     font-size: 8vw;
+}
+.menu ul{
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .categories p{
@@ -102,17 +107,9 @@ li{
     color: #82ae46;
 }
 
-.menu-1{
-    display: none;
-}
 
-.menubar ul li:hover .menu-1{
-    display: block;
-    position: absolute;
-    background: white;
-    margin-top: 15px;
-    margin-left: -15px;
-}
+
+
 
 .category-items{
     width: 100%;
