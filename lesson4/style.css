@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+    justify-content: space-between; 
+    align-items: center;
+    height: 65px;
+}
+
+
+.h1 span{
+    padding: 300px;
+    font-family: "Poppins", Arial, sans-serif;
+    width: 40px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #82ae46;
+}
+
+.h1 span:hover{
+    color: black;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin-top: 20px 25px 20px;
+}
+
+li{
+    padding: 20px 20px;
+    list-style: none;
+    color: black;
+    margin: 25px;
+    flex-direction: column;
+}
+
+
+.categories{
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(https://preview.colorlib.com/theme/vegefoods/images/xbg_2.jpg.pagespeed.ic.TiulCkAOXN.webp);
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.categories span{
+    font-family: "Amatic SC",cursive;
+    font-weight: 400;
+    color: #fff;
+    font-size: 8vw;
+}
+
+.categories p{
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+
+.categories button{
+    background: #82ae46;
+    color: #fff;
+    transition: 0.25s;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    min-width: 125px;
+    height: 35px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.categories button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #82ae46;
+    color: #82ae46;
+}
+
+.menu-1{
+    display: none;
+}
+
+.menubar ul li:hover .menu-1{
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.category-items{
+    width: 100%;
+    padding: 80px 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center !important;
+}
+
+
+.category-items span{
+    font-size: 15px;
+    font-family: "Poppins",Arial,sans-serif;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+
+.category-items p{
+    color: rgba(0,0,0,.5);
+    font-size: 12px;
+    font-family: "Poppins",Arial,sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.category-items .item1 .icon{
+    background: #e4b2d6;
+    background-image: url(https://image.flaticon.com/icons/png/512/411/411763.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.category-items .item2 .icon{
+    background: #dcc698;
+    background-image: url(https://image.flaticon.com/icons/png/512/2329/2329903.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+
+.category-items .item3 .icon{
+    background: #a2d1e1;
+    background-image: url(https://image.flaticon.com/icons/png/512/809/809498.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    border-radius: 50%;
+    margin-left: 17px;
+    margin-bottom: 10px;
+}
+
+.category-items .item4 .icon{
+    background: #dcd691;
+    background-image: url(https://image.flaticon.com/icons/png/512/950/950299.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+.category-items .icon:hover{
+    cursor: pointer;
+    background-color: #82ae46;
+    border: 1px solid #82ae46;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}

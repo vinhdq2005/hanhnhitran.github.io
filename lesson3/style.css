@@ -11,16 +11,10 @@
     margin-right: 40px;
 }
 
-.orange-box {
+.right {
     background-color: orange;
     height: 100%;
     width: 100%;
     margin-right: 40px;
 }
 
-.orange-box1 {
-    background-color: yellow;
-    display: flex;
-    flex-direction: colomn;
-    width: 100%;
-}
