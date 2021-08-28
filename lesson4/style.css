@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -108,9 +108,6 @@ li{
 }
 
 
-
-
-
 .category-items{
     width: 100%;
     padding: 80px 120px;
@@ -188,4 +185,170 @@ li{
     color: white;
     cursor: pointer;
     transition: 0.25s;
+}
+
+
+.category-section{
+    width: 100%;
+    padding: 0px 100px;
+}
+
+
+
+.details{
+    width: 100%;
+    height: 543px;
+    display: flex;
+}
+
+
+.category-section .details .left{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.product1{
+    width: 100%;
+    height: 250px;
+    background-position: bottom;
+    background-image: url(https://preview.colorlib.com/theme/vegefoods/images/xcategory-1.jpg.pagespeed.ic.alxe1GXuAu.webp);
+    background-size: 100%;
+}
+
+.category-section .details .left p{
+    font-family: "Poppins",Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background: #82ae46;
+    padding: 4px 16px;
+    display: inline-block;
+    flex-direction: row;
+    color: #fff;
+    cursor: pointer;
+    align-items: flex-end;
+}
+
+
+
+.category-section .details .left p{
+    font-family: "Poppins",Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background: #82ae46;
+    padding: 4px 16px;
+    display: inline-block;
+    flex-direction: row;
+    color: #fff;
+    cursor: pointer;
+    align-items: flex-end;
+}
+
+
+.product2{
+    background-image: url(https://preview.colorlib.com/theme/vegefoods/images/xcategory-2.jpg.pagespeed.ic.5035OoKGCA.webp);
+    width: 400px;
+    height: 265px;
+    background-size: 100%;
+    margin-top: 25px;
+}
+
+.middle{
+    width: 100%;
+    display: flex;
+}
+
+.product3{
+    background-image: url(https://preview.colorlib.com/theme/vegefoods/images/xcategory.jpg.pagespeed.ic.JIYFOwf8jy.webp);
+    width: 100%;
+    height: 543px;
+    background-size: 90%;
+    margin-left: 25px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.middle span{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 500;
+    color: #82ae46;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 75px;
+}
+
+
+.middle p{
+    color: rgba(0,0,0,.5);
+    font-size: 15px;
+    font-family: "Poppins",Arial,sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+.middle button{
+    background: #82ae46;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-family: "Poppins",Arial,sans-serif;
+    padding: 10px 16px;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+.middle button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #82ae46;
+    color: #82ae46;
+    transition: 0.3s;
+}
+
+
+.category-section .details .right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.product4{
+    width: 85%;
+    height: 250px;
+    background-position: bottom;
+    background-image: url(https://preview.colorlib.com/theme/vegefoods/images/xcategory-3.jpg.pagespeed.ic.IebYHvpTTo.webp);
+    background-size: 105%;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+
+.product5{
+    width: 85%;
+    height: 267px;
+    background-position: bottom;
+    background-image: url(https://preview.colorlib.com/theme/vegefoods/images/xcategory-4.jpg.pagespeed.ic.mstLsR7ycw.webp);
+    background-size: 105%;
+    margin-left: 25px;
+}
+
+
+.category-section .right p{
+    font-family: "Poppins",Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background: #82ae46;
+    padding: 4px 16px;
+    display: inline-block;
+    flex-direction: row;
+    color: #fff;
+    cursor: pointer;
+    justify-content: flex-end;
 }
