@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 10px;
+}
+
+
+body{
+    background: url(./image/galaxy.jpg);
+    background-position: 0 1000px;
+    font-family: 'Lobster', cursive;
+}
+
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 25px;
+}
+
+
+h2{
+    color: beige;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+
+.image img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+ul li{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-family:  'EB Garamond', serif;
+    font-style: italic;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 15px 15px;
+    background: #f6f6f6;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+
+
+.btn:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
