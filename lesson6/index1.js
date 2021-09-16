@@ -44,7 +44,7 @@ for(let i=1; i<=5; i++){
 }
 
 for(let i=10; i<=30; i = i+2){
-    console.log("hello");
+    console.log(i);
 }
 
 
