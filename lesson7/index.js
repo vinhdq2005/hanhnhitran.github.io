@@ -43,7 +43,7 @@ function tinhTich(b,a){
 
 
 function tinhThuong(b,a){
-    console.log(`Ans ${a} \ ${b} is ${a/b}`);
+    console.log(`Ans ${a} / ${b} is ${a/b}`);
     if(b == 0){
         console.log("no solution");
     }else{
