@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+:root {
+    --main-color: #c0392b;
+    --body-bg: #181616;
+    --box-bg: #221f1f;
+    --text-color: #ffffff;
+    --nav-height: 60px;
+}
+
+
+*{
+    margin: 0;
+    padding: -3px;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 16px;
+}
+
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #181616;
+    color: #ffffff;
+    padding-top: 60px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.main-color{
+    color: #c0392b;
+}
+
+.container{
+    max-width: 2000px;
+    padding:0 40px;
+    margin: auto;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.nav-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: black;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    height: 60px;
+}
+
+.nav a{
+    color: #ffffff;
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.nav-menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.nav-menu li{
+    margin-left: 30px;
+}
+
+.nav-menu a{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-menu a:hover{
+    color: #c0392b;
+}
+
+
+.nav-menu a.btn:hover, 
+a.logo:hover{
+    color: unset;
+}
+
+.btn{
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    color: #ffffff;
+    padding: .25rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.btn-hover::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #c0392b;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-hover:hover::before{
+    width: 100%;
+}
+
+.btn i,
+.btn span{
+    z-index: 1;
+}
+
+.btn i{
+    margin-right: 1rem;
+}
+
+
+.item-menu{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 101;
+    position: relative;
+    display: none;
+    align-items: center;
+}
+
+.item,
+.item::before,
+.item::after{
+    width: 30px;
+    height: 3px;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    transition: 0.4s;
+}
+
+
+.item::before,
+.item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.item::before{
+    top: 0px;
+}
+
+.item::after{
+    bottom: 0px;
+}
+
+.item-menu.active .item{
+    background-color: transparent;
+}
+
+
+.item-menu.active .item::before{
+    transform-origin: top left;
+    transform: rotate(45deg);
+    left: 6px;
+}
+
+.item-menu.active .item::after{
+    transform-origin: bottom left;
+    transform: rotate(-45deg);
+    left: 6px;
+}
+
+
+.items{
+    padding-top: 40%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.items img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.item-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+
+}
+
+.item-content-wrapper{
+    padding-right: 5rem;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+.item-content-wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.item-content-title{
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 900;
+}
+
+.movies-info{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+.movie-info{
+    display: flex;
+    align-items: center;
+    font-size: -8rem;
+    font-weight: 600;
+}
+
+.movie-info span{
+    margin-left: 20px;
+}
+
+.movie-info i{
+    color: #c0392b; 
+}
+
+.item-content-description{
+    font-size: 1.15rem;
+    margin-top: 30px;
+    line-height: 1.5rem;
+}
+
+
+.movie-info ~ .movie-info{
+    margin-left: 20px;
+}
+
+.item-action{
+    margin-top: 30px;
+
+}
+
+@media only screen and (max-width: 850px){
+    html{
+        font-size: 12px;
+    }
+
+    .item-menu{
+        display: grid;
+    }
+
+    .nav-menu{
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        background-color: #000000;
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        padding: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-menu li{
+        margin: 10px 30px;
+
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
+

@@ -49,4 +49,4 @@ if (a == "yes"){
   }
 }
 
-alert(myAnswer)
+alert(myAnswer) 
