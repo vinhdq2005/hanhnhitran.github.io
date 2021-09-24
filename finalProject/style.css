@@ -304,8 +304,9 @@ a.logo:hover{
     width: 100%;
 }
 
-.movie-list-title{
-    display: flex;
+.title{
+    display: block;
+    padding-left: 76px;
 }
 
 .container{
@@ -357,8 +358,8 @@ a.logo:hover{
 
 .movie-list-item button{
     padding: 15px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 10px;
     outline: none;
     border: none;
