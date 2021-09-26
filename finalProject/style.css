@@ -574,8 +574,10 @@ a{
     flex-direction: column;
     padding: 10px;
     opacity: 0;
-    transition: opacity 0.5s;
+    transition: opacity 1s;
 }
+
+
 
 .moviecard:hover,
 .moviecard:hover .thumb,
@@ -620,6 +622,11 @@ a{
 .movie-list-item:hover .movie-list-desc,
 .movie-list:hover .movie-list-item > button{
     opacity: 1 !important;
+}
+
+
+.splide__list li{
+    padding: 10px 15px;
 }
 
 
