@@ -7,3 +7,6 @@ $(document).ready(()=>{
     let navText = ["<i class='bx bx-chevron-left' ></i>", "<i class='bx bx-chevron-right' ></i>"]
 
 })
+
+
+
