@@ -24,7 +24,7 @@ var data = [
   {
     img: "https://kobis.or.kr/common/mast/movie/2018/10/3a4267d7bce04106b996ad93e65a57d1.jpg",
     link: "https://www.netflix.com/title/81026705?trackId=13752289&trackIdJaw=13752289&trackIdEpisode=13752289&trackIdTrailer=13752289&dpRightClick=1",
-  },
+  }
 ];
 
 
@@ -38,6 +38,5 @@ for (let index = 0; index < data.length; index++) {
     </div>
 </div>
 </div>`;
-    container.innerHTML+=html;
-    
+    container.innerHTML+=html;  
 }
