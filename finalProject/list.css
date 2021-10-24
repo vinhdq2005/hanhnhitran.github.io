@@ -39,6 +39,9 @@ img{
     max-width: 2000px;
     padding:0 40px;
     margin: auto;
+    justify-content: center;
+    left: auto;
+    right: auto;
 }
 
 
@@ -331,4 +334,18 @@ a.logo:hover{
     background: transparent;
     cursor: pointer;
     color: white;
+}
+
+
+.container button{
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+}
+
+
+.container input{
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
 }

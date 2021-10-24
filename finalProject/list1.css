@@ -332,3 +332,17 @@ a.logo:hover{
     cursor: pointer;
     color: white;
 }
+
+
+.container button{
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+}
+
+
+.container input{
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+}

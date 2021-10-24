@@ -99,6 +99,7 @@ img{
 }
 
 
+
 .nav-menu a.btn:hover, 
 a.logo:hover{
     color: unset;
@@ -724,4 +725,28 @@ a{
     }
 }
 
+
+.bbb{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+
+.bbb button{
+    border-radius: 17px;
+    padding: 13px;
+    border: none;
+    margin-top: 20px;
+}
+
+.bbb a{
+    color: black;
+}
+
+
+.bbb button:hover{
+    color: black;
+    background-color: white;
+}
 
