@@ -6,4 +6,4 @@ function factorial(n){
         factorialResult *= i;
     }
     console.log(`n ${i}`);
-}
+}   
