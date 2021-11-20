@@ -21,7 +21,45 @@ print(score)
 
 # -------------------------------------------
 
+# number <- input
+# if (number MOD 3 = 0){
+#     display ("multiple of 3")
+# }
+# else{
+#     display ("not a multiple of 3")
+# }
 
 
+# num1 <-input
+# num2 <-input
+# sum <- num1 + num2
+# if (sum > 100){
+#     display (100)
+# }
+
+# else{
+#     display(sum)
+# }
 
 
+# display ( is cert)
+# have cert <- input ()
+# display (years)
+# year <- input
+# salary <- 35000
+
+# if (with cert)
+# {
+#     if ( year < 10)
+#     {
+#         salary <- salary + 10000
+#     }
+
+#     else ( year > 10)
+#     {
+#         salary <- salary + 15000
+#     }
+# }
+
+
+# --------------------------------

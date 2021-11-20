@@ -119,4 +119,45 @@ else {
 
 
 // ----------------------------------------
+// STRING
+
+const name = 'ram';
+const name1 = 'hari';
+const result = `The names are ${name} and ${name1}`;
+
+// ----------------------------------------
+// MATRIX
+
+const array = [[2,0], [-1,3]]                 //Array
+const matrix = math.matrix([[7,1], [-2,3]])   //Matrix
+
+
+math.square(array)   //Array, [[4, 0], [1, 9]]
+math.square(matrix)  //Matrix, [[49, 1], [4, 9]]
+
+math.add(array, matrix)       //Matrix, [[9,1], [-3,6]]
+math.multiply(array, matrix)  //Matrix, [[14,2], [-13,8]]
+
+math.ones(2, 3)    // Matrix, [[1, 1, 1], [1, 1, 1]]
+
+
+//-----------------------
+ const a = math.matrix([1, 4, 9, 16, 25])  //Matrix, [1, 4, 9, 16, 25]
+ math.sqrt(a)                              //Matrix, [1, 2, 3, 4, 5]
+ 
+ const b = [1, 2, 3, 4, 5]        
+ math.factorial(b)               //Array, [1, 2, 6, 24, 120]
+
+ const c = [[2, 0], [-1, 3]]                //array
+ const d = math.matrix([[7, 1], [-2, 3]])   //matrix
+ math.multiply(c, d)                        //Matrix, [[14, 2],[-13, 8]]
+
+ math.add(c, 2)              //array, [[4, 2], [1, 5]]
+
+ math.det(c)               // 6
+ math.det(d)               // 23
+
+
+
+//----------------------------------------------
 
