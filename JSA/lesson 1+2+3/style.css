@@ -19,7 +19,7 @@
     background-position: center;
     width: 100%;
     height: 100vh;
-    position: absolute;
+    /* position: absolute; */ 
 }
 
 
@@ -27,8 +27,13 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding-top: 28px;
+    /* padding-top: 20px; */
     color: #fff;
+    height: 5px;
+}
+
+.s1 nav .logo{
+    height: 9px;
 }
 
 
@@ -109,15 +114,93 @@
 }
 
 .title{
-    background-color: rgb(81, 188, 221);
+    /* background-color: rgb(81, 188, 221); */
     width: 100%;
-    height: 180vh;
+    height: 90vh;
 }
 
 .title .word h1{
-    font-size: 180%;
+    font-size: 227%;
+    font-weight: 300;
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
+
+
+.title .word h1::after{
+    display: block;
+    height: 2px;
+    background-color: #e67622;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+section{
+    padding: 80px 0;
+}
+
+
+.title .word p{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;   
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.cup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.letter .box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+
+.letter a{
+    font-size: 350%;
+    display: 145%;
+    color: #e67e22; 
+    font-weight: 200;
+}
+
+
+.letter h2{
+    margin-top: 2px;
+    font-size: 135%;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+.letter p{
+    line-height: 145%;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: 17px;
+    top: 10%;
+    left: 35px;
+    width: 230px;
+}
+
