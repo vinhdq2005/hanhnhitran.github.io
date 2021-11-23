@@ -204,3 +204,26 @@ section{
     width: 230px;
 }
 
+.section-meals{
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+
+.meals-showcase{
+    list-style: none;
+    padding: 0;
+}
+
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.section-meals img{
+    height: auto;
+    width: 100%;
+}
+
