@@ -126,6 +126,7 @@
     text-align: center;
     margin-bottom: 30px;
     letter-spacing: 1px;
+    color: black;
 }
 
 
@@ -242,6 +243,7 @@ section{
     /* margin-bottom: 30px; */
     letter-spacing: 1px;
     padding-top: 590px; 
+    color: black;
 }
 
 
@@ -385,5 +387,122 @@ section{
 }
 
 
+.picc{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.picc i{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 155%;
+    margin-right: 10px;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.picc p{
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
 
 
+.picc a{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.test{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+    ), url(http://www.omnifood.net/resources/CSS/img/back-customers-min.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+}
+
+
+.word h1{
+    font-size: 227%;
+    font-weight: 300;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+
+.word h1::after{
+    display: block;
+    height: 2px;
+    background-color: #e67622;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+.rools{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.rool{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.rools p{
+    line-height: 145%;
+    color: white;
+    font-size: 20px;
+    width: 381px;
+    padding: 2%;
+    font-style: italic;
+}
+
+.people{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.rools img{
+    border-radius: 50%;
+    margin-right: 10px;
+    height: auto;
+    width: 12%;
+    margin-top: 26px;
+}
+
+
+.toy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
