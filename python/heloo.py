@@ -63,3 +63,14 @@ print(score)
 
 
 # --------------------------------
+
+# repeat umtil(goal)
+# {
+#     move forward
+#     rotate right
+#     move forward
+#     rotate left
+# }
+
+
+# ------------------------------------
