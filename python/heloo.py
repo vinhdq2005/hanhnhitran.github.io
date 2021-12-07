@@ -74,3 +74,13 @@ print(score)
 
 
 # ------------------------------------
+# nums <- [8, 2, 3, 5, 7, 9]
+# sum <- 0
+# for each score in num:
+# {
+#     if(score MOD 2 = 0)
+#     {
+#         sum <- sum + score
+#     }
+# }
+# display {num}
