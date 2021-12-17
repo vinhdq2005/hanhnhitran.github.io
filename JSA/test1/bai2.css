@@ -1,0 +1,17 @@
+.haha {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(226, 240, 232);
+    position: relative;
+}
+.haha:hover .hihi {
+    opacity: 1;
+}
+.haha .hihi {
+    transition: 1s;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(130, 220, 226);
+    opacity: 0;
+}
