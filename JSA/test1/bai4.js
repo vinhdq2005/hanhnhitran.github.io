@@ -23,3 +23,5 @@ function clock()
   document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
   document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
 }
+
+

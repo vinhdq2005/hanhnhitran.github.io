@@ -20,3 +20,6 @@ myDoubleArray[index++] = testArray2;
 myDoubleArray[index++] = testArray3;
 
 console.log(myDoubleArray[0],myDoubleArray[1][3], myDoubleArray[2]['test'],) 
+
+// -----------------------------------
+

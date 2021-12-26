@@ -84,3 +84,19 @@ print(score)
 #     }
 # }
 # display {num}
+
+#----------------------------
+# spin <- Random (1,3)
+# if{
+#     spin = 1
+#     display <- green
+# } 
+# else{
+#     if{
+#         spin=2
+#         display <- blue
+#     }
+#     else{
+#         display <- color khac
+#     }
+# }
