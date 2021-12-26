@@ -1,4 +1,4 @@
-let signInForm = document.getElementById("signUpForm")
+let signUpForm = document.getElementById("signUpForm")
 
 signUpForm.onsubmit = (e) =>{
     e.preventDefault()
@@ -9,7 +9,7 @@ signUpForm.onsubmit = (e) =>{
 
 
 
-    let email = signInForm.email.value
+    let email = signUpForm.email.value
     let password = signUpForm.password.value
     let confirmPassword = signUpForm.password.value
 
@@ -20,7 +20,7 @@ signUpForm.onsubmit = (e) =>{
         let validate = false
     }
     if(!password){
-        setTextErr("#passwordErr", " Email is required")
+        setTextErr("#passwordErr", " Password is required")
         let validate = false
     }
     if(!confirmPassword){
