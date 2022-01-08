@@ -1,5 +1,11 @@
 let signUpForm = document.getElementById("signUpForm")
 
+let users = []
+let userFormLocal = JSON.parse(localStorage.getItem("users"))
+if (userFormLocal) {
+    users = userFormLocal
+}
+
 signUpForm.onsubmit = (e) =>{
     e.preventDefault()
 
@@ -11,34 +17,40 @@ signUpForm.onsubmit = (e) =>{
 
     let email = signUpForm.email.value
     let password = signUpForm.password.value
-    let confirmPassword = signUpForm.password.value
+    let confirmPassword = signUpForm.confirmPassword.value
 
+    
     let validate = true
     
     if(!email){
         setTextErr("#emailErr", " Email is required")
-        let validate = false
+        validate = false
     }
     if(!password){
         setTextErr("#passwordErr", " Password is required")
-        let validate = false
+        validate = false
     }
     if(!confirmPassword){
         setTextErr("#confirmPasswordErr", " confirmPassword is required")
-        let validate = false
+        validate = false
     }
-
-    if(password.lenght <6){
+    if(password.length < 6){ 
         setTextErr("#passwordErr", "Pasword must be at least 6 characters")
-        let validate = false
+        validate = false
     }else{
         if(confirmPassword != password){
             setTextErr("#confirmPasswordErr", "Password does not match")
-            let validate = false
+            validate = false
         }
     }
     if(validate){
         console.log("aaaa");
+        let user = {
+            email: email,
+            password: password
+        }
+        users.push(user)
+        localStorage.setItem("users", JSON.stringify(users))
     }
 }
 
