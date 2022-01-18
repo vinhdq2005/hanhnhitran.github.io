@@ -1,40 +1,43 @@
-let signInForm = document.getElementById("signInForm")
+let formSignIn = document.getElementById("formSignIn");
 
-signInForm.onsubmit = (e) =>{
-    e.preventDefault()
+let setTextErr = (query, content) => {
+  document.querySelector(query).innerHTML = content;
+};
 
-    setTextErr("#emailErr", "")
-    setTextErr("#passwordErr", "")
-    setTextErr("#confirmPasswordErr", "")
-
-
-
-    let email = signInForm.email.value
-    let password = signIpForm.password.value
-    let confirmPassword = signInForm.password.value
-
-    let validate = true
-    
-    if(!email){
-        setTextErr("#emailErr", " Email is required")
-        let validate = false
-    }
-    if(!password){
-        setTextErr("#passwordErr", " Password is required")
-        let validate = false
-    }
-    if(password.lenght <6){
-        setTextErr("#passwordErr", "Pasword must be at least 6 characters")
-        let validate = false
-    }
-    if(validate){
-        console.log("aaaa");
-    }
+let users = [];
+let userslist = JSON.parse(localStorage.getItem("users")) ;
+if (userslist) {
+  users = userslist;
 }
 
+formSignIn.onsubmit = (e) => {
+  e.preventDefault();
+  let email = formSignIn.email.value;
+  let password = formSignIn.password.value;
 
-let setTextErr = (query, content) =>{
-    document.querySelector(query).innerHTML = content
-}
+  let valid = true;
 
+  if (!email) {
+    setTextErr("#emailErr", "Email is required");
+    valid = false;
+  }
+  if (!password) {
+    setTextErr("#passwordErr", "Password is required");
+    valid = false;
+  }
 
+    if (valid) {
+      let success = false;
+      for (let i = 0; i < users.length; i++) {
+        if (users[i].email == email && users[i].password == password) {
+          open("../lesson8_api/index.html", "_self");
+          success = true;
+          break;
+        }
+      }
+      if (success == false) {
+        alert("Sign in failed");
+      }
+    }
+
+};
