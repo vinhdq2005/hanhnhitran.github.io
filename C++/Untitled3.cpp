@@ -87,3 +87,36 @@ signed main(){
 	while(t--) process();
 }
 
+// ----------------------------
+
+for(int i = 1; i < 2 * n; i++){
+	for(int j = 1; j <=2 * n; j++) used[j] = 0;
+	for(int i = 2 * n; i >= 1; 1--){
+		if(i == 2 * n; || a[i].fi != a[i + 1].fi){
+			itr[a[i].fi] = 1;
+		}
+	}
+}
+int x = a[i].fi + a[2 * n].fi, ini = 2 * n;
+vectot<ii answer;
+answer.clear();
+	bool ck = 1;
+	int tempp = x;
+	for(int j = 1; j <= n; j++){
+		int tmp = x - a[ini].fi;
+		if(tmp <= 0){
+			ck = 0;
+			break;
+		}
+		used[a[ini].se] = 1;
+		while(used[a[itr[tmp]].se]) itr [tmp]--
+		if(tmp <= 0 || itr[tmp] == -1 || a[itr[tmp]].fi != tmp){
+			ck = 0:
+			break;
+		}
+		answer.pb({a[ini].fi, a[itr[tmp]].fi});
+		used[a[itr[tmp]].se] = 1;
+		x = a[ini].fi;
+		while(used[a[ini].se]) ini--;
+		while(used[a[itr[tmp]].se]) itr[tmp--;]
+	}
