@@ -162,7 +162,7 @@ let country_code = {
 const dropList = document.querySelectorAll(".drop-list select"),
 fromCurrency = document.querySelectorAll(".from select"),
 toCurrency = document.querySelectorAll(".to select"),
-getButton = document.querySelectorAll("form select");
+getButton = document.querySelector(".boxes");
 
 console.log(dropList);
 for (let i = 0; i < dropList.length; i++) {
