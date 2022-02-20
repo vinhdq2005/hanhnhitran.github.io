@@ -159,40 +159,52 @@ let country_code = {
     "ZMK" : "ZM",
     "ZWD" : "ZW"
 }
-const dropList = document.querySelectorAll(".drop-list select"),
-fromCurrency = document.querySelectorAll(".from select"),
-toCurrency = document.querySelectorAll(".to select"),
-getButton = document.querySelector(".boxes");
+const dropList = document.querySelectorAll('.drop-list select'),
+    fromCurrency = document.querySelector('.from select'),
+	toCurrency = document.querySelector('.to select'),
+	getButton = document.querySelector('.ex-change'),
+	apikey = '3898dca26bc48a2508ff42b2'
 
-console.log(dropList);
 for (let i = 0; i < dropList.length; i++) {
-    for(currency_code in country_code){ 
-        let selected;
-        if(i == 0){
-            selected = currency_code == "USD" ? selected : "";
-        }else if(i == 0){
-            selected = currency_code == "VND" ? selected : "";
-        }
-        let optionTag = `<option value="${currency_code}">${currency_code}</option>`;
-        dropList[i].insertAdjacentHTML("beforeend", optionTag);
-    }
-} 
+	for (currency_code in country_code) {
+		let selected
+		if (i == 0) {
+			selected = currency_code == 'USD' ? selected : ''
+		} else if (i == 0) {
+			selected = currency_code == 'VND' ? selected : ''
+		}
+		let optionTag = `<option value="${currency_code}">${currency_code}</option>`
+		dropList[i].insertAdjacentHTML('beforeend', optionTag)
+	}
+}
 
-getButton.addEventListener("click", e =>{
-    e.preventDefault();
-    getExchangeRate();
+getButton.addEventListener('click', e => {
+	e.preventDefault()
+	getExchangeRate()
 })
 
+function getExchangeRate() {
+	const amount = document.querySelector('#amount-value')
+	let amountVal = amount.value
+	if (amountVal == '' || amountVal == '0') {
+		amount.value = '1'
+		amountVal = 1
+	}
 
-function getExchangeRate(){
-    const amount = document.querySelector(".amount input");
-    let amountVal = amount.value;
-    if(amountVal == "" || amountVal == "0"){
-        amount.value = "1";
-        amountVal = 1;
-    }
-    let url = `https://v6.exchangerate-api.com/v6/${apikey}/latest/${fromCurrency.value}`;
-    fetch(url).then(response => response.json()).then(result =>{
-        console.log(result);
-    });
+	let url = `https://v6.exchangerate-api.com/v6/${apikey}/latest/${fromCurrency.value}`
+
+	fetch(url)
+		.then(response => response.json())
+		.then(result => {
+			console.log(result)
+			let exchangeRate = result.conversion_rates[toCurrency.value]
+			console.log(exchangeRate)
+			let resultExchange = amountVal * exchangeRate
+			console.log('🚩 : getExchangeRate : resultExchange', resultExchange)
+		})
 }
+
+// 1USD = 23000VND
+// 10USD = 230000VND
+
+//to = Enter Amount of 'from' * to-exchange
