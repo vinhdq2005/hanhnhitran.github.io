@@ -1,4 +1,4 @@
-// #include<iostream>
+// // #include<iostream>
 // using namespace std;
 //  int main (){
 //  	int A, B;
@@ -47,54 +47,84 @@
 // 	 }
 // }
 
-// // // Tính S1
-// function countS1(n) {
-//     let i = 2 // Bắt đầu từ số thứ 2
-// 	let result = 1 // Khởi tạo giá trị ban đầu là: 1/(1 mũ 2) = 1
 
-// 	while (i <= n) {
-// 		let j = 1
-// 		let denominator = 0
 
-// 		// Tính giá trị mẫu số
-// 		while (j <= i) {
-// 			denominator += j ** 2
-// 			j++
-// 		}
+// char hoten[30];
+// char ngaysinh[9];
 
-// 		// Cộng giá trị mỗi lần lặp vào kết quả theo công thức trong đề
-// 		result += (-1) ** (i + 1) / denominator
-// 		i++
-// 	}
+// char s[10] =  {'T', 'H', 'C','S', '', 'A', '\0'};
+// char s[10] = "THCS A";
 
-// 	return result
+// // #include<iostream>
+// using namespace std;
+
+// int main(){
+//     char arCh[50];
+//     cout << "Input character sequences;";
+//     cin >> arCh;
+//     cout << "Character sequences recieved";
+//     cout <<arCh;
+//     system("pause");
 // }
 
-// console.log(countS1(10)
+
+// //Ham strlen(s)
+// //Trả về chiều dài chuỗi s
+// char cLine[40] = "Have a nice day!";
+// int iLenght;
+// iLenght = strlen(cLine);
 
 
-// #------------------------
+// //Ham strcat(s, t)
+// //Nối chuỗi s2 vào cuối chuỗi s1.
+// char str1[25] = "Hello";
+// char str2[11] = "world";
+// strcat(str1, str2); //Hello World
 
-// Tính S2
-// function countS2(n) {
-// 	let i = 1 // Bắt đầu từ số thứ 1
-// 	let result = 0 // Khởi tạo giá trị ban đầu là: 0
 
-// 	while (i <= n) {
-// 		let j = 1
-// 		let denominator = 0
-
-// 		// Tính giá trị mẫu số
-// 		denominator = i * 2
-
-// 		// Cộng giá trị mỗi lần lặp vào kết quả theo công thức trong đề
-// 		result += (-1) ** (i + 1) / denominator
-// 		i++
-// 	}
-
-// 	return result
+// int tg;
+// for(int i = 0; i < n - 1; i++){
+//     for(int j = i + 1; j < n; j++){
+//         if(a[i] < a [j]{
+//             tg = a[a];
+//             a[i] = a[j];
+//             a[j] = tg;
+//         })
+//     }
 // }
 
-// console.log(countS2(2))
+
+// // #include <iostream>
+// using namespace std;
+ 
+// int main(){
+//     int n;
+//     do{
+//         cin >> n;
+//         if(n <= 0){
+//             cout << "\nNhap lai n = ";
+//         }
+//     }while(n <= 0);
+//     int sum = 0;
+//     for(int i = 1;i <= n;i++){
+//         if(n % i == 0){
+//             sum += i;
+//         }
+//     }
+//     cout << "\nSum = " << sum << '\n';
+// }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int L, R, i, tong;
+//     cout <<" Hay nhap vao doan so nguyen duong L va R";
+//     cin >> L>> R;
+//     while(L <=R){
+//         for (i=L; i<=R; i++)
+//            for(j=1; j<=i; j++)
+//               if(i%j==0)
+//                 tong=tong+j;
+//     }
+// }
