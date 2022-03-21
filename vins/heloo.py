@@ -86,3 +86,35 @@ print(score)
 #     }
 # }
 
+
+print("enter N > 0;")
+n = int (input())
+check = False
+
+for i in range(1, n+1):
+    if ( i**2 == n):
+        check = True
+        break
+
+if ( check == True):
+    print(n, "la so chinh phuong")
+else:
+    print(n, "kphai la so chinh phuong")
+
+
+def kiemtrasoHoanHao (n):
+    tong = 9
+    for i in range(1, n):
+        if(n % i) == 0:
+            tong += i
+    if tong == n:
+        return True
+    else:
+        return False
+
+
+n = int(input('enter N > 0;'))
+if kiemtrasoHoanHao(n):
+    print(n, "la so hoan hao")
+else:
+    print(n, "kphai so hoan hao")
