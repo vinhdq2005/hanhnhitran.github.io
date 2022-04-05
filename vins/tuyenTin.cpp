@@ -142,7 +142,7 @@ int main(){
     cout << "enter n";
     cin >> n;
 
-    cout <, " num Fibonacci" << n << "is" << Fibonacci();
+    cout << " num Fibonacci" << n << "is" << Fibonacci();
     return 0;
 }
 })
@@ -379,7 +379,7 @@ int main(){
     ptintf("So %d trong he co so 2 = ", n);
     convertNumber(n,2);
     printf("\nSo %d trong he co so 16= ", n);
-    coonvertNumber(n, 16);
+    convertNumber(n, 16);
     return 1;
 }
 
@@ -427,7 +427,6 @@ int main(){
     giaiBPTBac 2(a, b, c,);
     return 1;
 }
-
 
 
 #include<bits/stdc++.h>
@@ -491,7 +490,235 @@ int main (){
     if(count == 0){
         cout << n << "la so NT";
     }else{
-        cout << n << "kphaai so NT"
+        cout << n << "kphai so NT"
     }
 }
 
+#include<iostream>
+using namespace std;
+int main (){
+    int A, B;
+    cout << "";
+}
+
+
+#include<stdio.h>
+#include<conio.h>
+int Fibonacci(int n)({
+    if(n == 1 || n == 2)
+    return 1;
+    return Fibonacci(n-1) + Fibonacci(n-2);
+})
+int main(){
+    int n;
+    cout << "enter n";
+    cin >> n;
+
+    cout << "num Fibonacci" << n << "is" <, Fibonacci();
+    return 0;
+}
+
+
+//  cho 1 so tnhien n >1 tim so nguyen to khong viet qua n trong cac truong hop sau
+int main(){
+    int n;
+    cout << "\nhap n ="
+    cin >> n;
+    if(n < 2){
+        cout << n << "kphai so NT";
+        return 0;
+    }
+    int count = 0;
+    for(int i = 2; i <= sqrt(n); i++){
+        if(n % 1 == 0){
+            count ++;
+        }
+    }
+    if(count == 0){
+        cout << n << "la so NT";
+    }else{
+        cout << n << " kphai so NT"
+    }
+}
+
+
+
+//Chuyen doi he co so 10 sang he co so B
+// #include <iostream>
+
+using namespace std;
+
+const char CHAR_55 = 55;
+const char CHAR_48 = 48;
+
+int convertNumber(int n, int b){
+    if( n < 0 || b < 2 || b > 16){
+        prinft("He co so hoac gia tri chuyen doi khong hop le!");
+        return 0;
+    }
+    int i;
+    char arr[20];
+    int count = 0;
+    int m;
+    int remainder = n;
+    while ( remainder > 0){
+        if(b > 10){
+            m = remainder % break; if(m >=10){
+                arr[cout = (char)(m + CHAR_55)];
+                count++;
+            }else{
+                arr[cout] = (char)(m + CHAR_48);
+                count++;
+            }
+        }else{
+            arr[count] = (char)((remainder % b)+ CHAR_48);
+            count++;
+        }
+        remainder = remainder/ b;
+    }
+    for(i = count - 1; i >=0; i--){
+        prinft("%c", arr[i]);
+    }
+    return 1;
+}
+
+
+
+//Ham main
+int main(){
+    int n =12;
+    prinft("So %d trong he co so 2 =", n);
+    convertNumber(n,2);
+    prinft("\nSo %d trong he co so 16=", n);
+    convertNumber(n, 16);
+    return 1;
+}
+
+
+using namespace std;
+void giaiPTBac 2(float a, float b, float c){
+    if(a==0){
+        if(b==0){
+            prinft("phuong trinh vo no")
+        }else{
+            prinft("phuong trinh co 1 no: x = %f", (-c/b));
+        }
+        return;
+    }
+    float delta = b*b - 4*a*c;
+}
+ 
+
+#include<bitset>/stdc++.h>
+using namespace std;
+
+int ux, vx, uy, vy;
+int main(){
+    cin >> us >> vs >> uy >> vy;
+    if(ux < uy){
+        if(vx <= vy) cout << -1 << "\n";
+        else cout << (uy - ux) / (vx - vy) << "\n";
+    }
+    else{
+        if(vy <= vx) cout << -1 << "\n";
+        else cout << ( ux-uy) / (vy - vx) << "\n"
+    }
+}
+
+
+int main(){
+    int nl
+    cout << "\nhap n ="
+    cin >> n;
+    if(n<2){
+        cout << n << "kphai so NT";
+        return 0;
+    }
+    int count = 0;
+    fir(int i=2; i<=sqrt(n); i++){
+        if(n % 1 == 0){
+            count ++;
+        }
+    }
+    if(count == 0){
+        cout << n << "la so NT";
+    }else{
+        cout << n << "kphai so NT"
+    }
+}
+
+
+int Fibonacci(int n)({
+    if(n == 1|| n ++ 2)
+    return 1l
+    return Fibonacci(n-1) + Fibonacci(n-2);
+}
+int main(){
+    int n;
+    cout << "enter n";
+    cin >> n;
+
+    cout << "num Fibonacci" << n << "is" <, Fibonacci();
+    return 0;
+}
+
+int main(){
+    int n;
+    cout << "\nhap n";
+    cin >> n;
+    if(n<2){
+        cout << n << "kphai so NT";
+        return 0;
+    }
+    int count = 0;
+    for(int i = 2; i<=sqrt(n); i++){
+        if(n % 1 == 0){
+            count ++;
+        }
+    }
+    if(count == 0){
+        cout <, n << "la so NT";
+    }else{
+        cout << n << 'kphai so NT'
+    }
+}
+
+
+
+using namespace std;
+int main(){
+    ifstream input(#);
+    fsream output;
+    output.open("#");
+    string str;
+    input >> str;
+    cout << str;
+    cout << str;
+    output << "Hello world";
+    input.close();
+    output.close();
+    return 0;
+}
+
+
+
+
+int Fibonacci (int n){
+    int f0 = 0;
+    int f1 = 1;
+    int f2 = 2;
+    int i;
+
+    if (n < 0){
+        return -1;
+    }else if ( n== 0|| n == 1){
+        return n;
+    }else{
+        for(i = 2; i < n; i++)
+    }
+}
+
+
+
+freopen("bai1.inp", "r", stdin)
+freopen("bai1.out", "w", stdout)
