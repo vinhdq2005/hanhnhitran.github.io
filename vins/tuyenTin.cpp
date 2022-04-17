@@ -722,3 +722,63 @@ int Fibonacci (int n){
 
 freopen("bai1.inp", "r", stdin)
 freopen("bai1.out", "w", stdout)
+
+
+
+//bai 2
+#include<bits/stdc++.h>
+using namespace std;
+
+string s, t;
+
+int main(){
+    cin >> s >> t;
+    int ans = 0;
+    for(int i = 0; i < s.length(); i++){
+        if(i + t.length() >= s.length()) break;
+        bool ck = 1;
+        for(int j = 0; j < t.length(); j++){
+            if(s[i + j] != t[j]){
+                ck = 0;
+                break;
+            }
+        }
+        if(ck){
+            ans++;
+            i += t.length() - 1;
+        }
+    }
+    cout << ans << "\n";
+}
+
+
+
+//bai 1
+#include<bits/stdc++.h>
+using namespace std;
+
+int ux, vx, uy, vy;
+
+int main(){
+    cin >> ux >> vx >> uy >> vy;
+    if(ux < uy){
+        if(vx <= vy) cout << -1 << "\n";
+        else cout << (uy - ux) / (vx - vy) << "\n";
+    }
+    else{
+        if(vy <= vx) cout << -1 << "\n";
+        else cout << (ux - uy) / (vy - vx) << "\n";
+    }
+}
+
+
+
+#include<bits.stdc++.h>
+using namespace std;
+
+int ux, vx, uy, vy;
+
+int main(){
+    freopen("bai1.inp", "r", stdin)
+    freopen("bai1.out", "w", stdout)    
+}
