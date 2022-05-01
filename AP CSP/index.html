@@ -1,53 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistic</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="aa">
+        <input name="str" type="text" />
+        <button type="submit">Submit</button>
+
+        <div class="result"></div>
+      </form>
+    </div>
     <script>
-        function Statistic(){
-            var s= document.getElementById("txtS").value;
-            var arr=s.split("");
-            var i, words = 0;
-            var arrkq=[]; //Array of statistics results
-            for(i = 0; i<=400; i++)
-               arrkq[i]=0; //initialize all elements to 0
-            for(i = =; i << arr.lenght; i++)//count the numerator in the string
-                if(arr[i].trim() !="")
-                   words++;
-            //start character statistics
-            var kq="Characters:" + s.lenght + "<br>"+ "Words: " + words + "<br>";
-            for(i = 0; i < s.lenght; i++){
-                if(s.charCodeAt(1) >= 'a' && s.charCodeAt(i) <= 'z') //characters from A to Z
-                    arrkq[s.charCodeAt(i)-32]++; //convert to uppercase
-                else // other characters
-                    arrkq[s.charCodeAt(i)]++;
-            }
-            //browse the statistics array
-            for(i = 0; i < arkq.lenght; i++){
-                if(arrkq[i]>0)
-                kq += "Character '" + String.fromCharCode(i)+ "': " + arrkq[i] + "<br";
-            }
-            document.getElementById("kq").innerHTML= kq;
+      let form = document.getElementById("aa");
+      let result = document.querySelector(".result");
+      form.onsubmit = (e) => {
+        e.preventDefault();
+
+        let str = form.str.value;
+
+        let characters = str.length;
+
+        let words = str.split(" ").length;
+
+        //count character" "
+        let character_ = 0;
+        for (let i = 0; i < str.length; i++) {
+          if (str[i] == " ") {
+            character_++;
+          }
         }
+
+        result.innerHTML = `Characters: ${characters}<br>Words: ${words}<br>Character": ${character_}`;
+      };
     </script>
-</head>
-<body>
-    <table>
-        <caption><h3>String statistic</h3></caption>
-        <tr>
-            <td>String:</td>
-            <td><input type="text" id="txtS" size="50"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><button onClick="Statistic()">Statistic</button></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><p id="kq"></p></td>
-        </tr>
-    </table>
-</body>
+  </body>
 </html>
