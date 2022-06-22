@@ -48,6 +48,16 @@ int main(){
 }
 
 
+int main(){
+    int n;
+    cout<< "\nhap n ="
+    cin >> n;
+    if (n < 2){
+        cout <, n <, "kphai so NT"
+    }
+}
+
+
 
 char hoten[30];
 char ngaysinh[9];

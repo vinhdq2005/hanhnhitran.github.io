@@ -155,9 +155,21 @@ hr{
 }
 
 
+.user_info img{
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 
+.right .user_name_wrapper{
+  margin-left: 5px;
+}
 
+.right .user_name_wrapper h2{
+  font-size: 19px;
+}
 
 
   @media screen and (max-width: 762px) {
