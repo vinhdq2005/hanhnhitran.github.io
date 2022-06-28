@@ -52,6 +52,8 @@ form_.onsubmit = (e) => {
       .createUserWithEmailAndPassword(email, password)
       .then((userCredential) => {
         // Signed in
+        console.log(username)
+
         var user = userCredential.user;
         user.updateProfile({
           displayName: username,
