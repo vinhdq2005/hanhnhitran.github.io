@@ -149,7 +149,7 @@ let renderUserList = (data) => {
   dom.innerHTML = ""
 
   for (let i = 0; i < data.length; i++) {
-    let html = `<div class="item d-flex align-items-center">
+    let html = `<div id="c${data[i].id}" class="item d-flex align-items-center">
     <div class="image">
       <img
         src="${data[i].avatar}"
