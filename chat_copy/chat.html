@@ -21,7 +21,7 @@
           <div class="header d-flex justify-content-between align-items-center">
             <div class="avatar">
               <img id="userImg" src="https://picsum.photos/300" alt="" />
-              <span id="userName">Nguyễn Văn Cường</span>
+              <span id="userName">Hanhnhi Tran</span>
             </div>
             <div class="func">
               <i
@@ -53,12 +53,12 @@
             </div>
             <div class="dark_mode_setting">
               <label class="switch">
-                <input id="sw_mode" type="checkbox" />+-
+                <input id="sw_mode" type="checkbox" />
                 <span class="slider"></span>
               </label>
             </div>
             <div class="time">
-              <p>Wed 19:30:00</p>
+              <p id="realTime">Wed 19:30:00</p>
             </div>
           </div>
           <div class="chat_body">
@@ -106,7 +106,7 @@
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
     </script>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./chat.js"></script>
   </body>
 </html>
